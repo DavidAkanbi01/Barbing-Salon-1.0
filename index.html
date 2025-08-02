@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Modern Barbing Salon</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
 
+    <header class="sticky-header">
+        <div class="logo">BarberPro</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#booking">Booking</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle">🌞</button>
+    </header>
+
+    <main>
+
+        <section id="home" class="section reveal parallax-hero">
+            <div class="hero-text">
+                <h1>Feel Fresh, Look Sharp</h1>
+                <p>Professional grooming tailored for you</p>
+                <a href="#booking" class="cta-button">Book Now</a>
+            </div>
+        </section>
+
+        <section id="services" class="section reveal">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="card">Haircut</div>
+                <div class="card">Beard Trim</div>
+                <div class="card">Kids Cut</div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section reveal">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+            <!-- Placeholder images -->
+                <img src="assets/images/style1.jpg" alt="Style 1" />
+                <img src="assets/images/style2.jpg" alt="Style 2" />
+            </div>
+        </section>
+
+        <section id="booking" class="section reveal">
+            <h2>Book an Appointment</h2>
+            <form id="booking-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="datetime-local" required />
+                <select>
+                    <option>Select Service</option>
+                    <option>Haircut</option>
+                    <option>Beard Trim</option>
+                </select>
+                <button type="submit">Confirm</button>
+            </form>
+        </section>
+
+        <section id="about" class="section reveal">
+            <h2>About Us</h2>
+            <p>BarberPro is built on excellence, style, and community values.</p>
+        </section>
+
+        <section id="testimonials" class="section reveal">
+            <h2>Testimonials</h2>
+            <div class="swiper testimonial-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">“Amazing cut!” – John</div>
+                    <div class="swiper-slide">“My fade was perfect.” – Alex</div>
+                    <div class="swiper-slide">“Kid-friendly & fast.” – Maria</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <h2>Contact Us</h2>
+            <p>📍 123 Barber St | 📞 +123 456 7890 | 📧 info@barberpro.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 BarberPro. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --accent: gold;
+}
+
+[data-theme="dark"] {
+    --bg: #111;
+    --text: #eee;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+header.sticky-header {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.cta-button {
+    background: var(--accent);
+    color: #000;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.section {
+    padding: 60px 20px;
+    max-width: 960px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.section.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.services-grid, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.card {
+    background: #f5f5f5;
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+}  
+
+form {
+    display: grid;
+    gap: 1em;
+    max-width: 400px;
+}
+
+footer {
+    background: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.swiper-slide {
+  background: #f5f5f5;
+  padding: 1.5em;
+  border-radius: 10px;
+  text-align: center;
+  font-style: italic;
+  color: #444;
+}
+
+.parallax-hero {
+  background-image: url('assets/images/hero.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
